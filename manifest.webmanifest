@@ -1,0 +1,32 @@
+{
+  "name": "FUJIALPHA · Đăng ký thông tin thang máy",
+  "short_name": "FJA SMART",
+  "description": "Đăng ký thông tin thang máy FUJIALPHA",
+  "lang": "vi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#ED1C24",
+  "icons": [
+    {
+      "src": "Smart_FJA_logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "Smart_FJA_logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "Smart_FJA_logo.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

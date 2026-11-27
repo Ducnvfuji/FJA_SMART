@@ -281,7 +281,7 @@ const glab=k=>{const a=accOf(k);return a?(a.grp?"Nhóm "+a.grp+" - "+a.name:(a.n
 const accList=()=>[...ACCT.filter(a=>a.role=="sale"),MGR,...ACCT.filter(a=>a.role=="tech")].map(a=>[a.role=="mgr"?"Quản lý":glab(a.key),a.id]);
 const escA=x=>String(x==null?"":x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const SB_URL="https://ssqlluohicoewhpkgdvp.supabase.co",SB_KEY="sb_publishable_k8k2bt7fMe_vgJjA1Vawtg_UwseTcCW",MAIL="@fujialpha.local";
-const ASSET_BASE="";/* khi đã tải ảnh lên Supabase Storage, đổi thành: SB_URL+"/storage/v1/object/public/assets/" */
+const ASSET_BASE=SB_URL+"/storage/v1/object/public/assets/";/* khi đã tải ảnh lên Supabase Storage, đổi thành: SB_URL+"/storage/v1/object/public/assets/" */
 const SB={on:false,c:null,w:0};
 try{if(window.supabase){SB.c=window.supabase.createClient(SB_URL,SB_KEY);SB.on=true}}catch(_){}
 const sb=SB.c;
